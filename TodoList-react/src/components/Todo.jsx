@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TodoItem from "./TodoItem";
+import style from "../components/Outline.module.css";
 export default function Todo() {
      const [todo, setTodo] = useState("");
      const [todos, setTodos] = useState([]);
@@ -11,7 +12,7 @@ export default function Todo() {
 
 
   return (
-    <div>
+    <div className={style.header}>
       <h1>Todo</h1>
       <form onSubmit={handelSubmit}>
         <input
