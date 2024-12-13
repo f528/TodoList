@@ -1,5 +1,4 @@
-
-import style from "../components/Outline.module.css";
+import style from "../components/todo.module.css"
 import Form from "../components/Form";
 
 import TodoList from "../components/Todolist";
