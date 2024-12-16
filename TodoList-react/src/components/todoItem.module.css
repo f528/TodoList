@@ -1,25 +1,40 @@
-.list{
-    background-color: #fff;
+.deleteButton{
+margin:0 auto;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow :0 4px 6px rgba(0,0,0,0.1);
-  
-    margin-left: 20%;
-    margin-right: 20px;
-    width: 60%;
-    margin-top: 40px;
-}
-
-.completed{
-    text-decoration: line-through;
-
-}
-
-.list:hover{
-    background-color: #e0e0e0;
+    border: none;
+    padding: 13px 20px;
+    background-color: #f96d00;
+    color: rgb(22, 20, 20);
+    font-size: 16px;
     cursor: pointer;
+    float: right;
+    margin-right: 2px;
+    
+}
+
+
+
+
+.line{
+   background-color : #0f0c0c;
+}
+
+   
+.itemName{
+margin-top: 15px;
+margin-left: 2px;
+ text-align: center;
+    float: left;
+    justify-items: center;
+    justify-content: center;
+   
+}
+.divBtn{
+   
+     text-align: center;
+    float: right;
+}
+.container{
+   
 }

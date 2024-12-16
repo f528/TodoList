@@ -1,14 +1,20 @@
+import TodoItem from './TodoItem'
+import style from './todolist.module.css'
 
-import { useState } from "react";
-import TodoItem from "../components/TodoItem";
+export default function Todolist({todos ,setTodos}) {
 
-export default function Todolist({todos}) {
-  
-  return (
-    <div>
-      {todos.map((item) => (
-        <TodoItem key={item} item={item} />
-      ))}
-    </div>
-  );
+
+ function handelClick(todo) {
+   if (todo) {
+     alert("Do you realy want to delete this item?");
+   }
+   setTodos(todos.filter((el) => el !== todo));
+ }
+    return (
+      <div className={style.todolist}>
+        <TodoItem todos={todos} setTodos={setTodos} />
+        
+      </div>
+    );
+       
 }
