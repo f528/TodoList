@@ -1,7 +1,7 @@
 import style from "./TodoItem.module.css";
 import { useState } from "react";
 
-export default function TodoItem({ todo, todos, setTodos }) {
+export default function TodoItem({ todo, todos, setTodos,sortedList }) {
   // Función para manejar el clic en el botón de eliminar
   function handelClick(todo) {
     if (todo) {
@@ -25,7 +25,7 @@ export default function TodoItem({ todo, todos, setTodos }) {
 
   return (
     <div className={style.container}>
-      {todos.map((todo, index) => (
+      {sortedList.map((todo, index) => (
         <div key={index}>
           <div className={style.itemName}>
             <div className={style.divItem}>
