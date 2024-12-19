@@ -1,17 +1,6 @@
-.todolist{
-    background-color : #fff;
-    margin-right: 20%;
-    margin-left: 20%;
-    width: 60%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+.list{
+   
+  
 }
 .divBtn{
     background-color : #984f4f;

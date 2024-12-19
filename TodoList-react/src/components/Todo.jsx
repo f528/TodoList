@@ -15,10 +15,15 @@ export default function Todo() {
    
   return (
     <div className={style.header}>
-      <Form todos={todos} setTodos={setTodos} />
-      <Todolist todos= {todos} setTodos={setTodos} />
+      <Form  todo={todo} todos={todos} setTodos={setTodos} />  
+          
+      
+     
+        <Todolist  todo={todo} todos= {todos} setTodos={setTodos} />
+      </div>
+      
     
-    </div>
+   
   );
     
 }

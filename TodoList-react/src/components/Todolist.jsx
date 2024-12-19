@@ -12,7 +12,8 @@ export default function Todolist({todos ,setTodos}) {
  }
     return (
       <div className={style.todolist}>
-        <TodoItem todos={todos} setTodos={setTodos} />
+        
+        <TodoItem   todos={todos} setTodos={setTodos} />
         
       </div>
     );

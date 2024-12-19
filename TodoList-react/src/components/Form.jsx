@@ -2,12 +2,13 @@ import { useState } from "react";
 import style from "./form.module.css";
 
 export default function Form({ todos, setTodos }) {
-  const [todo, setTodo] = useState("");
+  // const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState({name:"",done:false});
 
   function handelSubmit(e) {
     e.preventDefault(e);
     setTodos([...todos, todo]);
-    setTodo("");
+    setTodo({name:"",done:false});
   }
 
   return (
@@ -16,8 +17,8 @@ export default function Form({ todos, setTodos }) {
         <input
           className={style.input}
           type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
+          onChange={(e) => setTodo({name: e.target.value,done:false})}
+          value={todo.name}
           placeholder="Add a todo list"
         />
      
